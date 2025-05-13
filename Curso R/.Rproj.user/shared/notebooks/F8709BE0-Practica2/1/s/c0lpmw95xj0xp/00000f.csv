@@ -1,0 +1,37 @@
+"0","install.packages(""tidyverse"")"
+"2","G1;H1;Errorh in install.packages : Updating loaded packages
+g"
+"0","install.packages(""skimr"")"
+"2","G1;H1;Errorh in install.packages : Updating loaded packages
+g"
+"0","install.packages(""janitor"")"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+G3;Installing package into ‘C:/Users/maria/AppData/Local/R/win-library/4.4’
+(as ‘lib’ is unspecified)
+g"
+"2","probando la URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/janitor_2.2.1.zip'
+"
+"2","Content type 'application/zip' length 292723 bytes (285 KB)
+"
+"2","downloaded 285 KB
+
+"
+"1","package ‘janitor’ successfully unpacked and MD5 sums checked
+"
+"1","
+The downloaded binary packages are in
+	C:\Users\maria\AppData\Local\Temp\Rtmp4WvM73\downloaded_packages
+"
+"0","install.packages(""tidyverse"")"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"1","Warning in install.packages :
+  package ‘tidyverse’ is in use and will not be installed
+"
+"0","install.packages(""skimr"")"
+"2","G1;H1;Errorh in install.packages : Updating loaded packages
+g"

@@ -1,0 +1,2 @@
+"0","clean_df <- bookings_df %>% "
+"0","  drop_na()"

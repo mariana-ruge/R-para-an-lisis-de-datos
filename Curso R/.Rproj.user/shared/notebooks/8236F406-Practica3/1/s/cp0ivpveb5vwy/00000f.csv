@@ -1,0 +1,5 @@
+"0","head(hotel_bookings_city)"
+"2","G1;H1;Errorh: objeto 'hotel_bookings_city' no encontrado
+Error durante el wrapup: no hay tantas estructuras en la pila
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart
+g"

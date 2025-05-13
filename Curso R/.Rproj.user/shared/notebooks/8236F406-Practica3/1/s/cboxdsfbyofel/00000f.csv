@@ -1,0 +1,6 @@
+"0","hotel_summary <- "
+"0","  hotel_bookings %>%"
+"0","  group_by(hotel) %>%"
+"0","  summarise(average_lead_time=mean(lead_time),"
+"0","            min_lead_time=min(lead_time),"
+"0","            max_lead_time=max(lead_time))"

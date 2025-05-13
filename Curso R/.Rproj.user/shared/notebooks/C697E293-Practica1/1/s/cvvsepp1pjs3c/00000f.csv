@@ -1,0 +1,2 @@
+"0","# Agregar una nueva columna con edad futura"
+"0","mutate(people, age_in_20 = age + 20)"

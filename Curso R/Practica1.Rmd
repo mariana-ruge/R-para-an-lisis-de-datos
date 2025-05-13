@@ -1,0 +1,56 @@
+---
+title: "Lección 2: Crea tu propio marco de datos"
+output: html_document
+---
+
+## Contexto de esta actividad
+
+Esta actividad se enfoca en crear y usar marcos de datos en `R`. Un marco de datos es un conjunto de columnas que contienen datos, similar a una hoja de cálculo o una tabla SQL. Puedes crearlos desde paquetes, archivos externos o datos generados manualmente.
+
+## Paso 1: Cargar paquetes
+
+\`\`\`{r} \# Instala tidyverse si aún no lo tienes install.packages("tidyverse")
+
+```{r}
+library("tidyverse")
+```
+
+``` r
+{r}
+```
+
+## Paso 2: Crear el Marco de Datos
+
+```{r}
+# Crear vectores de nombres y edades
+names <- c("Ana", "Luis", "María", "Pedro")
+age <- c(25, 30, 28, 22)
+
+# Crear el marco de datos
+people <- data.frame(names, age)
+```
+
+## Paso 3: Inspeccionar el Marco de Datos
+
+```{r}
+# Crear vectores de nombres y edades
+names <- c("Ana", "Luis", "María", "Pedro")
+age <- c(25, 30, 28, 22)
+
+# Crear el marco de datos
+people <- data.frame(names, age)
+```
+
+```{r}
+str(people)
+```
+
+```{r}
+#Vista rápida con tidyverse
+glimpse(people)
+```
+
+```{r}
+# Agregar una nueva columna con edad futura
+mutate(people, age_in_20 = age + 20)
+```

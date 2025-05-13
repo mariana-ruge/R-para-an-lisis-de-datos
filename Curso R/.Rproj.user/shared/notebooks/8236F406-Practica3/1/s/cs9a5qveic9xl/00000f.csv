@@ -1,0 +1,2 @@
+"0","hotel_bookings_v2 <-"
+"0","  arrange(hotel_bookings, desc(lead_time))"

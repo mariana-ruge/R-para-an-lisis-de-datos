@@ -1,0 +1,140 @@
+---
+title: "Practica2"
+author: "Mariana Ruge Vargas"
+date: "2025-05-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introducción
+
+En esta práctica se aplicarán técnicas básicas de limpieza de datos usando R y el paquete `tidyverse`. El dataset utilizado proviene del conjunto de datos *Hotel Booking Demand*.
+
+## Paso 1: Cargar e instalar paquetes
+
+```{r}
+install.packages("tidyverse")
+install.packages("skimr")
+install.packages("janitor")
+```
+
+```{r}
+library(tidyverse)
+library(skimr)
+library(janitor)
+```
+
+## Paso 2: Importar datos
+
+Importamos el archivo `hotel_bookings.csv` que debe estar en el directorio de trabajo.
+
+```{r}
+bookings_df <- readr::read_csv("hotel_bookings.csv", locale = locale(encoding = "latin1"))
+
+```
+
+## Paso 3: Exploración de datos
+
+### Vista previa de los datos
+
+```{r}
+head(bookings_df)
+```
+
+### Estructura general
+
+```{r}
+str(bookings_df)
+glimpse(bookings_df)
+```
+
+### Nombres de columnas
+
+```{r}
+colnames(bookings_df)
+```
+
+### Resumen estadístico
+
+```{r}
+skim_without_charts(bookings_df)
+```
+
+## Paso 4: Limpiar y transformar datos
+
+### Seleccionar columnas de interés
+
+```{r}
+trimmed_df <- bookings_df %>%
+  select(hotel, is_canceled, lead_time)
+```
+
+### Renombrar columna
+
+```{r}
+trimmed_df <- trimmed_df %>%
+  rename(hotel_type = hotel)
+```
+
+### Unir columnas de fecha
+
+```{r}
+example_df <- bookings_df %>%
+  select(arrival_date_year, arrival_date_month) %>%
+  unite(arrival_month_year, c("arrival_date_month", "arrival_date_year"), sep = " ")
+```
+
+### Crear columna con total de personas por reserva
+
+```{colnames(bookings_df)}
+
+```
+
+```{r}
+example_df <- bookings_df %>%
+  mutate(guests = adultos + ni_os + beb_s)
+
+head(example_df)
+
+```
+
+## Paso 5: Estadísticas de resumen
+
+```{r}
+summary_df <- bookings_df %>%
+  summarize(
+    number_canceled = sum(is_canceled, na.rm = TRUE),
+    average_lead_time = mean(lead_time, na.rm = TRUE)
+  )
+
+summary_df
+```
+
+## Paso 6: Limpieza adicional (opcional)
+
+### Usar `janitor` para limpiar nombres de columnas
+
+```{r}
+bookings_df <- bookings_df %>% 
+  clean_names()
+```
+
+### Eliminar filas incompletas (NA)
+
+```{r}
+clean_df <- bookings_df %>% 
+  drop_na()
+```
+
+## Paso 7: Visualización (opcional)
+
+```{r}
+example_df <- bookings_df %>%
+  mutate(guests = adultos + ni_os + beb_s)
+
+head(example_df)
+
+```

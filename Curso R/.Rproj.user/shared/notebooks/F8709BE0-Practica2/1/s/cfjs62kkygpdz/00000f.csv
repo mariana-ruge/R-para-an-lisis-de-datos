@@ -1,0 +1,7 @@
+"0","summary_df <- bookings_df %>%"
+"0","  summarize("
+"0","    number_canceled = sum(is_canceled, na.rm = TRUE),"
+"0","    average_lead_time = mean(lead_time, na.rm = TRUE)"
+"0","  )"
+"0",""
+"0","summary_df"

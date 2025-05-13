@@ -1,0 +1,5 @@
+"0","str(people)"
+"1","'data.frame':	4 obs. of  2 variables:
+ $ names: chr  ""Ana"" ""Luis"" ""María"" ""Pedro""
+ $ age  : num  25 30 28 22
+"

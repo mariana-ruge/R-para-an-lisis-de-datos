@@ -1,0 +1,8 @@
+"0","#Vista rápida con tidyverse"
+"0","glimpse(people)"
+"1","Rows: 4
+Columns: 2
+"
+"1","$ names [3m[38;5;246m<chr>[39m[23m ""Ana"", ""Luis"", ""María"", ""Pedro""
+$ age   [3m[38;5;246m<dbl>[39m[23m 25, 30, 28, 22
+"

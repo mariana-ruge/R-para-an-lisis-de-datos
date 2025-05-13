@@ -1,0 +1,6 @@
+"0"," <- "
+"2","G1;H1;Errorh: unexpected assignment en "" <-""
+Error durante el wrapup: no hay tantas estructuras en la pila
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart
+g"
+"0","  filter(hotel_bookings, hotel_bookings$hotel==""City Hotel"")"

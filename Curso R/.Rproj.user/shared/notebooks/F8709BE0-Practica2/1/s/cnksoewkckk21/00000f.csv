@@ -1,0 +1,2 @@
+"0","bookings_df <- bookings_df %>% "
+"0","  clean_names()"

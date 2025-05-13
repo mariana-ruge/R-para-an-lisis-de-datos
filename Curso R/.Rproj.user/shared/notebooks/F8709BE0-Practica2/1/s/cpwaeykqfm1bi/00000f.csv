@@ -1,0 +1,2 @@
+"0","trimmed_df <- bookings_df %>%"
+"0","  select(hotel, is_canceled, lead_time)"

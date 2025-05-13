@@ -1,0 +1,6 @@
+"0","# Crear vectores de nombres y edades"
+"0","names <- c(""Ana"", ""Luis"", ""María"", ""Pedro"")"
+"0","age <- c(25, 30, 28, 22)"
+"0",""
+"0","# Crear el marco de datos"
+"0","people <- data.frame(names, age)"

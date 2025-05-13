@@ -1,0 +1,14 @@
+"0","library(tidyverse)"
+"0","library(skimr)"
+"0","library(janitor)"
+"2","G2;H2;Avisoh: package ‘janitor’ was built under R version 4.4.3g
+"
+"2","G3;
+Adjuntando el paquete: ‘janitor’
+
+g"
+"2","G3;The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+g"

@@ -1,0 +1,2 @@
+"0","trimmed_df <- trimmed_df %>%"
+"0","  rename(hotel_type = hotel)"
